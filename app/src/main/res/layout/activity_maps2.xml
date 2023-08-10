@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical">
+
+    <detrack.zaryansgroup.com.detrack.activity.utilites.MapWrapperLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.activites.MapsActivity2" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </detrack.zaryansgroup.com.detrack.activity.utilites.MapWrapperLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/li_route"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/oval_bg_hwhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="match_parent"
+            android:text="Route Name"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center_vertical" />
+
+        <Spinner
+            android:id="@+id/spRouteName_map"
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/li_customer"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/li_route"
+        android:background="@drawable/oval_bg_hwhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="match_parent"
+            android:text="Customer Name"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            />
+
+        <Spinner
+            android:id="@+id/spCustomerName_map"
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"/>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_below="@+id/li_route"-->
+<!--        android:background="@drawable/btn_background"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight=".3"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Customer Name"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"/>-->
+<!--        <Spinner-->
+<!--            android:id="@+id/spCustomerName_map"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight=".7"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="5dp"/>-->
+<!--    </LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.activites.LedgerProceedActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvLedgerCustomer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:text="Esso Gas Station"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvDateRange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:text="03/20/2018 to 04/18/2018"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="SR"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:text="Debit"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:text="Credit"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:text="Balance"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Description"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/headerLayout"
+        android:id="@+id/ledgerRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/dark_blue">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvDebitTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="Total"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvCreditTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="Total"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvBalanceTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Balance Total"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>

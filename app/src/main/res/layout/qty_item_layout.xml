@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name :"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/skuTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price :"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/discriptionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deliver QTY :"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/qtyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/returnlinerlayout"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Return QTY :"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/returnTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Actual QTY :"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/actualqtyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/satatus_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orignal QTY :"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/orginal_qtyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/rejected_resson_qtyTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:paddingTop="6dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ok_item"
+                android:id="@+id/imgview" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

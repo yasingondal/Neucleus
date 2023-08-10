@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/returnLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="3dp"
+            android:id="@+id/tvCustomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_margin="3dp"
+            android:id="@+id/tvCustomInv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice Number"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvCustomDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_margin="3dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvCustomTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvCustomSalesMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales Mode"
+            android:layout_margin="3dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

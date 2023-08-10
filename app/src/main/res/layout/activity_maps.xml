@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tryagainBtn"
+        android:layout_gravity="center"
+        android:text="Try Again"
+        android:visibility="gone"
+        />
+    <ListView
+        android:background="@color/dark_blue"
+        android:layout_gravity="right"
+        android:id="@+id/menuList"
+        android:visibility="gone"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

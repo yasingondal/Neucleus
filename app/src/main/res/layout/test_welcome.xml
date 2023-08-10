@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="welcome_view_model_Test"
+            type="detrack.zaryansgroup.com.detrack.activity.viewmodels.Welcome_ViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDFDFD">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/appbluegrey"/>
+
+
+                <TextView
+                    android:id="@+id/btnmore"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/menuicon"
+                    android:layout_margin="20dp"/>
+
+
+
+                <ImageView
+                    android:id="@+id/companylogo"
+                    android:layout_width="95dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/zfinallogo" />
+
+
+                <FrameLayout
+                    android:id="@+id/fragent_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/header"
+                    android:layout_above="@id/bottomlinear"/>
+
+                <LinearLayout
+                    android:id="@+id/bottomlinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bottom_navbg"
+                    android:layout_alignParentBottom="true"
+                    android:weightSum="4">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/assignOrderLL"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="2dp">
+
+
+                        <ImageView
+                            android:id="@+id/assignimg"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/carticon1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/assignCounter"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/circle_bg_oran"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            app:layout_constraintStart_toEndOf="@+id/assignimg"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toEndOf="@id/assignimg"
+                            android:text="Assigned"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/assignimg" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/deliveredOrderLL"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp">
+
+                        <ImageView
+                            android:id="@+id/deliveryimg"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/truckicon1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/deliveredCounter"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/circle_bg_oran"
+                            android:gravity="center"
+                            android:text="11"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            app:layout_constraintStart_toEndOf="@+id/deliveryimg"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toEndOf="@id/deliveryimg"
+                            android:text="Delivered"
+                            android:textColor="@color/black"
+
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/deliveryimg" />
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/bookedOrderLL"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp">
+
+                        <ImageView
+
+                            android:id="@+id/bookimg"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/carticon2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toEndOf="@id/bookimg"
+                            android:text="Booked"
+                            android:textColor="@color/black"
+
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/bookimg" />
+
+
+                        <TextView
+                            android:id="@+id/bookedCounter"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/circle_bg_oran"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            app:layout_constraintStart_toEndOf="@+id/bookimg"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/returnedOrderLL"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="2dp">
+
+                        <ImageView
+                            android:id="@+id/returnoimg"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/truckicon2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/returnCounter"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/circle_bg_oran"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            app:layout_constraintStart_toEndOf="@+id/returnoimg"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toEndOf="@id/returnoimg"
+                            android:text="Returned"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/returnoimg" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        
+
+    </RelativeLayout>
+
+
+
+
+
+
+</layout>

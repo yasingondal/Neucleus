@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.activites.SalesReportActivity">
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvSalesMan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:text="Sales Man"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/btnFrom"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="From" />
+
+            <Button
+                android:id="@+id/btnTo"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:text="To"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:text="Inv No"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Description"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Qty"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:text="Amount"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Mode"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/headerLayout"
+        android:id="@+id/salesReportRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/bottom_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/dark_blue">
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_below="@+id/tvTotal"
+            android:id="@+id/tvTotalSalesQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Qty: 0"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_below="@+id/tvTotal"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvTotalSalesAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Sales: 0"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvTotalSalesQty"
+            android:id="@+id/tvTotalSalesCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cash: 0"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvTotalSalesAmount"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tvTotalSalesCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Credit: 0"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+</RelativeLayout>

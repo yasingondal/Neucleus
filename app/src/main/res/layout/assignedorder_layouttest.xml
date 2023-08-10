@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <data>
+        <variable
+            name="undeliver_viewmodel"
+            type="detrack.zaryansgroup.com.detrack.activity.viewmodels.Undelivered_ViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F4FB">
+
+
+        <TextView
+            android:id="@+id/txtheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Undelivered Orders"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/searchET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundcornerwhite"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/txtheading"
+            android:layout_marginEnd="10dp"
+            android:hint="Search..."
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_assignorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/searchET" />
+
+
+        <TextView
+            android:id="@+id/txtnoitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Item Avalible"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</layout>

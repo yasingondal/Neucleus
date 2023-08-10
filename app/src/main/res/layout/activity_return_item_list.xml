@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="detrack.zaryansgroup.com.detrack.activity.activites.ItemsListActivity"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:background="@color/white">
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_button_and_selector"
+        android:hint="Search..."
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/colorLL"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orignal Item"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+
+                    android:background="@color/white"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Updated Item"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:background="@color/background"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <TextView
+                    android:id="@+id/tvRejectedOrReturned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rejected Item"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:background="@color/light_red"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/item_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+        <ListView
+            android:background="@color/dark_blue"
+            android:layout_gravity="right"
+            android:id="@+id/menuList"
+            android:visibility="gone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:background="@drawable/green_rounded_btn"
+        />
+
+</LinearLayout>
+

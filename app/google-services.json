@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "91577692272",
+    "firebase_url": "https://zed-delivery.firebaseio.com",
+    "project_id": "zed-delivery",
+    "storage_bucket": "zed-delivery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91577692272:android:2014e3728bfbdc17",
+        "android_client_info": {
+          "package_name": "detrack.zaryansgroup.com.detrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91577692272-jm2p34iliohdv15gduprf3hnqfsquup2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ_p4u3jwRZYsX9t1TuDj0BgmUtKc6qu4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

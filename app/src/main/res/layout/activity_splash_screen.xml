@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="detrack.zaryansgroup.com.detrack.activity.activites.SplashScreen"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/appbluegrey">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/zedlogo2"
+        android:layout_marginTop="20dp"
+        />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tv_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageGif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

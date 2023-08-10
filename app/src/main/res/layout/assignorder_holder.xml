@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/ovalbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/companyimg"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/img_not_found"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/li_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@+id/companyimg"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <TextView
+                android:id="@+id/txtcustomername"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="2dp"
+                android:text="Mubashir Murtaza"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtaddress"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:text="sdf dsafasd fasd fa f s f asd fas df asdfas"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/companyimg"
+            app:layout_constraintTop_toBottomOf="@+id/li_n" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/companyimg"
+            app:layout_constraintTop_toBottomOf="@+id/txtaddress">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="Ph: " />
+
+            <TextView
+                android:id="@+id/txtphone"
+                android:layout_width="115dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="+1-202-555-0120" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/orderAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Amount  Rs.1000"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/companyimg"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/li_n"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtorderid"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/ovalbg_grey"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="order#12345"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/ovalbg_grey"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginEnd="2dp"
+                android:text="2021-04-07"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recy_fewitem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/li_n"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ovalnextarrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text=">"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

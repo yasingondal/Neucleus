@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="appheadercolor">#FFFFFF</color>
+
+
+    <color name="red">#F62817</color>
+    <color name="blue">#2B65EC</color>
+    <color name="oil">#3B3131</color>
+    <color name="black">#000000</color>
+    <color name="gun_metal">#2C3539</color>
+    <color name="background">#FFAABDFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="frog_green">#99C68E</color>
+    <color name="drak_blue_hader">#2D5F8B</color>
+    <color name="baby_blue">#95B9C7</color>
+    <color name="green">#99C68E</color>
+    <color name="dark_blue">#4276A4</color>
+
+    <color name="text_shadow">#7F000000</color>
+    <color name="pink">#E6434E</color>
+    <color name="jamni">#853FA2</color>
+    <color name="light_red">#E55B3C</color>
+    <color name="light_green">#7FE817</color>
+    <color name="green2">#9DC209</color>
+    <color name="dark_blue2">#2D5F8B</color>
+    <color name="metallic_silver">#BCC6CC</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="pastel_green">#7DE57D</color>
+    <color name="orange_peel">#FF9900</color>
+    <color name="electric_purple">#9900FF</color>
+    <color name="yellow">#ffff00</color>
+    <color name="rosy_brown">#bc8f8f</color>
+    <color name="appbluegrey">#2D5468</color>
+<!--    37474f-->
+
+
+</resources>

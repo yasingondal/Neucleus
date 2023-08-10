@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#b0000000">
+
+    <LinearLayout
+        android:id="@+id/contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue"
+            android:text="Empty Bottles"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/emptyBottleRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/btnok"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Ok"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="@color/appbluegrey"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/btncancel"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="Cancel"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/appbluegrey"
+                android:layout_toStartOf="@+id/btnok" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivClose"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/contact_layout"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:src="@drawable/ic_cancel_black_24dp" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivSave"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/contact_layout"-->
+<!--        android:layout_toEndOf="@id/ivClose"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:src="@drawable/ic_save_black_24dp"-->
+<!--        android:layout_toRightOf="@id/ivClose" />-->
+
+
+
+</RelativeLayout>

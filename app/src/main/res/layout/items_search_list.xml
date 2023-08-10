@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- Single ListItem -->
+
+    <!-- Customer Name -->
+
+    <TextView
+        android:id="@+id/tvItemCode"
+        android:layout_width="0dp"
+        android:layout_weight=".2"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Item Code"
+        android:textSize="14sp"/>
+
+    <TextView android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content"
+        android:text="item Name"
+        android:padding="10dip"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvItemDisplayPrice"
+        android:layout_width="0dp"
+        android:layout_weight=".3"
+        android:layout_height="wrap_content"
+        android:text="Display Price"
+        android:gravity="right"
+        android:textSize="14sp"
+        android:layout_marginRight="20dp"/>
+</LinearLayout>

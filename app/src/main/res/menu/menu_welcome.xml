@@ -1,0 +1,82 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="detrack.zaryansgroup.com.detrack.activity.activites.WelcomeActivity">
+
+    <item
+        android:id="@+id/addSaleOrder"
+        android:title="Add Sale Order"
+        />
+    <item
+        android:id="@+id/salesReturnLinear"
+        android:title="Add Sale Return"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/addNewCustomer"
+        android:title="Add Customer"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/addNewReceipt"
+        android:title="Add Receipt"
+        app:showAsAction="never" />
+
+<!--    <item-->
+<!--        android:id="@+id/syncedOrderLL"-->
+<!--        android:title="Sync Order"-->
+<!--        app:showAsAction="never" />-->
+
+    <item
+
+        android:id="@+id/dailySaleClosing"
+        android:title="Daily Closing"
+        app:showAsAction="never" />
+    <item
+
+        android:id="@+id/linearReport"
+        android:title="Report"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionSyncCompanyInfo"
+        android:title="Sync App Data "
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionLoadPrevious"
+        android:title="Load Previous Orders"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/actionUpdateLocation"
+        android:title="Update Customer Location"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/actionSetting"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionEnableLocation"
+        android:title="Enable Location"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionNameandVehical"
+        android:title="User Info"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/actionAbout"
+        android:title="About us"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionLogOut"
+        android:title="Logout"
+        app:showAsAction="never"/>
+
+</menu>

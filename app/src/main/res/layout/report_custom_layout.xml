@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reportRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/edit_text_back">
+
+    <ImageView
+        android:id="@+id/ivReport"
+        android:layout_margin="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/report" />
+
+    <TextView
+        android:id="@+id/tvReportName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivReport"
+        android:text="Report name"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

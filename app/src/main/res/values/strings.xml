@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Nucleus Traders</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pod__dash_board">POD_DashBoard</string>
+    <string name="title_activity_items_list">ItemsListActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_pod_imges_view">pod_imges_view</string>
+    <string name="title_activity_get_stock">GetStock</string>
+    <string name="title_activity_take_order">TakeOrder</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_user_detail">UserDetailActivity</string>
+    <string name="title_activity_user_details">UserDetailsActivity</string>
+    <string name="title_activity_show_taken_order">ShowTakenOrderActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_new_order_notification">NewOrderNotificationActivity</string>
+    <string name="title_activity_return_order_search">ReturnOrderSearchActivity</string>
+    <string name="title_activity_return_order">ReturnOrderActivity</string>
+    <string name="title_activity_add_images">AddImages</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_select_percentage">select_percentage</string>
+    <string name="title_activity_splash_screen">ZedDelivery</string>
+    <string name="title_activity_return_item_list">ReturnItemListActivity</string>
+    <string name="title_activity_chart">ChartActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_daily_sale_summary">DailySaleSummary</string>
+    <string name="title_activity_reci">Reci</string>
+    <string name="title_activity_receipts">ReceiptsActivity</string>
+    <string name="title_activity_receipt">ReceiptActivity</string>
+    <string name="logout">Logout</string>
+    <string name="search_return_order">Add Sales Return</string>
+    <string name="designed_developed"><![CDATA[Designed & Developed by \nZaryans Consulting (Pvt.) Ltd.]]></string>
+    <string name="address_string">Plot# 77, Street# 6, I-10/3, Islamabad</string>
+    <string name="rights_string">2018 © Zaryans Consulting (Pvt.) Ltd. All rights reserved.</string>
+    <string name="networkErrorMsg">Check network connection and try again</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="upload_image_tag"><u>Upload Image</u></string>
+    <string name="title_item_details"><u>Order Item Details</u></string>
+
+
+</resources>

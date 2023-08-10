@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/inputSearch"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="Search Customer.."
+        android:layout_margin="5dp"
+        android:textColorHint="@color/dark_blue"
+        android:textColor="@color/dark_blue"
+        android:background="@drawable/rounded_button_and_selector1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <!-- Editext for Search -->
+        <TextView
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Route Code"/>
+        <Spinner
+            android:visibility="gone"
+            android:id="@+id/route_code"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Route Name"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:layout_marginLeft="10dp"
+            android:id="@+id/route_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/background"/>
+    <!-- List View -->
+    <ListView
+        android:id="@+id/customer_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp" />
+</LinearLayout>

@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="detrack.zaryansgroup.com.detrack.activity.activites.TakeNewReceiptsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/customer_detailsLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:clickable="true">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/customer"
+                android:clickable="false"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/btnCustomerName"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:background="@drawable/edit_text_border"
+                android:text="Select Customer"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dateLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/selector">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/calendar"
+                android:clickable="false"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:text="Date"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Bank"
+            />
+        <Spinner
+            android:id="@+id/spBankName1"
+            android:layout_weight="2"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="Previous Balance  :"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/PreviousAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/tvPrevious"
+                android:text="0.0"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnSync"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="Sync"
+                android:background="@color/dark_blue"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/recevingAmount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_button_and_selector"
+            android:hint="Receving Amount"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/dark_blue"
+            android:textColor="@color/white"
+            android:text="Save" />
+    </LinearLayout>
+</LinearLayout>

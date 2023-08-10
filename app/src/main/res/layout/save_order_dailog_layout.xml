@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="Order Series Number "
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/seriesNo"
+            android:gravity="center"
+            android:text="A001"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+  <TextView
+      android:id="@+id/orderStatusTv"
+      android:textStyle="bold"
+      android:layout_marginLeft="10dp"
+      android:text="Order status"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="14sp"/>
+    <RadioGroup
+        android:id="@+id/OrderStatusRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2.5"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/BookingRB"
+            android:text="Booking"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            />
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/deliveredRB"
+            android:text="Delivered"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+    </RadioGroup>
+
+   <CheckBox
+       android:layout_marginLeft="10dp"
+       android:id="@+id/pobCB"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Use Current Location as POB"/>
+    <TextView
+        android:id="@+id/latlngTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+</LinearLayout>

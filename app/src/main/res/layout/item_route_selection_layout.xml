@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:hint="Search Item.."
+        android:layout_margin="10dp"
+        android:textColorHint="@color/dark_blue"
+        android:textColor="@color/dark_blue"
+        android:background="@drawable/rounded_button_and_selector1" />
+
+    <!-- List View -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Single ListItem -->
+
+
+        <TextView
+            android:id="@+id/searchItemPrice"
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content"
+            android:text="Select "
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="right"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/searchItemName"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="Route Name"
+            android:textStyle="bold"
+            android:padding="10dip"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+    <ListView
+        android:layout_marginTop="4dp"
+        android:id="@+id/item_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="detrack.zaryansgroup.com.detrack.activity.activites.ReturnOrderSearchActivity">
+
+    <item
+        android:id="@+id/actionRegNewCustomer"
+        android:title="Register New Customer"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionSyncCompanyCustomerInfo"
+        android:title="Sync Company Customer Info"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionAddSalesOrder"
+        android:title="Add Sales Order"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionAddSalesReturn"
+        android:title="Add Sales Return"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionSettings"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/enableLocation"
+        android:title="Enable Location"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/actionAboutUs"
+        android:title="About us"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/actionUserInfo"
+        android:title="User Info"
+        app:showAsAction="never"/>
+
+
+</menu>

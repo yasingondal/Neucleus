@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="detrack.zaryansgroup.com.detrack.activity.activites.AddImages">
+
+    <ImageView
+        android:id="@+id/zoomImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/podFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/AddImgBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/green_rounded_btn"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Add New POD"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <GridView
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="70dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:verticalSpacing="10dp" />
+
+        <TextView
+            android:id="@+id/no_podTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="No POD FOUND"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/menuList"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/dark_blue"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/pobFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/AddPobImgBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/green_rounded_btn"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="Add New POB"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <GridView
+                android:id="@+id/pobgridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="70dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp" />
+
+            <TextView
+                android:id="@+id/no_pobTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:text="No POB FOUND"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUploadImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Images"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

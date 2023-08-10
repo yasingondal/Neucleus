@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- 
+	Copyright (c) Josh Clemm 2010
+	 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!--  Active tab -->
+	<item android:state_selected="true" android:state_focused="false"
+		android:state_pressed="false" android:drawable="@drawable/tab_bg_selected" />
+	<!--  Inactive tab -->
+	<item android:state_selected="false" android:state_focused="false"
+		android:state_pressed="false" android:drawable="@drawable/tab_bg_unselected" />
+	<!--  Pressed tab -->
+	<!--<item android:state_pressed="true" android:drawable="@color/green2" >
+		<padding android:left="1dp"
+			android:top="1dp"
+			android:right="1dp"
+			android:bottom="1dp"
+			/>
+		<corners
+			android:bottomRightRadius="5dip"
+			android:bottomLeftRadius="5dip"
+			android:topLeftRadius="5dip"
+			android:topRightRadius="5dip"/>
+	</item>-->
+	<item android:state_pressed="true" >
+		<shape>
+			<solid android:color="#9DC209"/>
+			<padding android:left="1dp"
+				android:top="1dp"
+				android:right="1dp"
+				android:bottom="1dp"
+				/>
+			<corners
+				android:bottomRightRadius="5dip"
+				android:bottomLeftRadius="5dip"
+				android:topLeftRadius="5dip"
+				android:topRightRadius="5dip"/>
+		</shape>
+	</item>
+	<!--  Selected tab (using d-pad) -->
+	<item android:state_focused="true" android:state_selected="true"
+		android:state_pressed="false" android:drawable="@color/dark_blue2" />
+</selector> 

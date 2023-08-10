@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+
+ >
+    <TextView
+        android:id="@+id/updateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/clickable_text_color"
+        android:text="Update Jobs"
+        android:clickable="true"
+        android:padding="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"/>
+    <TextView
+        android:id="@+id/sendTrackIdTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/clickable_text_color"
+        android:text="Send Track ID"
+        android:clickable="true"
+        android:padding="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"/>
+    <TextView
+        android:id="@+id/startservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/clickable_text_color"
+        android:clickable="true"
+        android:text="Start Service"
+        android:padding="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"/>
+    <TextView
+        android:id="@+id/stopservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/clickable_text_color"
+        android:clickable="true"
+        android:text="Stop Service"
+        android:padding="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"/>
+    <TextView
+        android:id="@+id/startsync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/clickable_text_color"
+        android:clickable="true"
+        android:text="Start Sync"
+        android:padding="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"/>
+    <TextView
+        android:id="@+id/take_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/clickable_text_color"
+        android:clickable="true"
+        android:text="Take Order"
+        android:padding="5dp"
+        />
+</LinearLayout>

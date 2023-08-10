@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+
+    >
+    <TextView
+        android:id="@+id/marketplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/clickable_text_color"
+        android:text="Nearest Market Places"
+        android:clickable="true"
+        android:padding="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"/>
+    <TextView
+        android:id="@+id/currentuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/clickable_text_color"
+        android:text="Current User Place"
+        android:clickable="true"
+        android:padding="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"/>
+    <TextView
+        android:id="@+id/aboutTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/clickable_text_color"
+        android:clickable="true"
+        android:text="Exit"
+        android:padding="5dp"
+        />
+
+</LinearLayout>

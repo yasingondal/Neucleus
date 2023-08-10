@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/eachVisitLL"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.8"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name "
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_CustomerName"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.8"
+                    android:layout_height="wrap_content"
+                    android:text="Route Name"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_CustomerRoute"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="wrap_content"
+                    android:text="routeName"
+                    android:textSize="14sp" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/isNewOrderTV"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.8"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Date"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_VisitDate"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="tv_VisitDate"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.8"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Time "
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center|left"
+                    android:id="@+id/tv_VisitTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="match_parent"
+                    android:text="0.0"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.8"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Status"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_VisitStatus"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="Not Delivered"
+                    android:textColor="@color/orange_peel"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/tv_IsSync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receipt Not Send"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                 />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/appbluegrey"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:textColor="@color/blue"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:text="New Order"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>

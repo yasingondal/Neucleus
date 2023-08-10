@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="detrack.zaryansgroup.com.detrack">
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name=".permission.RECEIVE" /> <!-- <uses-permission android:name="detrack.zaryansgroup.com.detrack.permission.C2D_MESSAGE" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".activity.app_setttings.AppSettings"
+        android:allowBackup="true"
+        android:icon="@drawable/zedlog1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.activites.VisitsMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activites.VisitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activites.AddNewVisitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activites.View_Customers_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.activites.view_all_products_activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.activites.TestAct.TestWelcome"
+            android:label="Test"
+            android:theme="@style/AppThemeNoBar" />
+        <activity
+            android:name=".activity.activites.TestAct.TestMainActivity"
+            android:label="Test"
+            android:theme="@style/AppThemeNoBar" />
+        <activity
+            android:name=".activity.activites.TestAct.TestPOD"
+            android:label="Test"
+            android:theme="@style/AppThemeNoBar" />
+        <activity
+            android:name=".activity.activites.MapsActivity2"
+            android:label="@string/title_activity_maps2"
+            android:theme="@style/AppThemeNoBar" />
+        <activity
+            android:name=".activity.activites.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.activites.POD_DashBoard"
+            android:label="@string/title_activity_pod__dash_board" />
+        <activity
+            android:name=".activity.activites.ItemsListActivity"
+            android:label="@string/title_activity_items_list"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.activites.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <service
+            android:name=".activity.Service.FirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- <service android:name=".Activity.Service.FirebaseMessagingService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <service
+            android:name=".activity.Service.GPSService"
+            android:enabled="true" />
+        <service
+            android:name=".activity.Service.CompanyInfoService"
+            android:enabled="true" />
+        <service android:name=".activity.Service.GCMNotificationIntentService" />
+
+        <activity
+            android:name=".activity.activites.GetStock"
+            android:label="@string/title_activity_get_stock" />
+        <activity
+            android:name=".activity.activites.TakeOrder"
+            android:label="@string/title_activity_take_order"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.activites.TabActivity"
+            android:label="@string/title_activity_tab"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.activites.NewUserActivity"
+            android:label="@string/title_activity_user_details" />
+        <activity
+            android:name=".activity.activites.ShowTakenOrderActivity"
+            android:label="@string/title_activity_show_taken_order"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.activites.RegisterActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activity.activites.TestAct.NavbarActivity"
+            android:label="Test"
+            android:theme="@style/AppThemeNoBar" />
+        <activity
+            android:name=".activity.activites.SecondView.SelectProductActivitySecond"
+            android:label="Test"
+            android:theme="@style/AppThemeNoBar" />
+
+        <receiver
+            android:name=".activity.BrodCastReciver.GcmBoardCastReciver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- <category android:name="com.javapapers.android" /> -->
+                <category android:name="detrack.zaryansgroup.com.detrack" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.activites.NewOrderNotificationActivity"
+            android:label="@string/title_activity_new_order_notification" />
+        <activity
+            android:name=".activity.activites.ReturnOrderSearchActivity"
+            android:label="@string/title_activity_return_order_search" />
+        <activity
+            android:name=".activity.activites.ReturnOrderActivity"
+            android:label="@string/title_activity_return_order" />
+        <activity
+            android:name=".activity.activites.AddImages"
+            android:label="@string/title_activity_add_images" />
+        <activity
+            android:name=".activity.activites.SettingActivity"
+            android:label="@string/title_activity_setting" />
+        <activity
+            android:name=".activity.activites.SplashScreen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.activites.ReturnItemListActivity"
+            android:label="@string/title_activity_return_item_list" />
+        <activity
+            android:name=".activity.activites.ChartActivity"
+            android:label="@string/title_activity_chart" />
+        <activity
+            android:name=".activity.activites.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.activites.DailySaleSummary"
+            android:label="@string/title_activity_daily_sale_summary" /> <!-- <activity -->
+        <!-- android:name=".Activity.Activities.TakeNewReceiptsActivity" -->
+        <!-- android:label="@string/title_activity_reci" /> -->
+        <activity
+            android:name=".activity.activites.TakeNewReceiptsActivity"
+            android:label="@string/title_activity_receipts" />
+        <activity
+            android:name=".activity.activites.ReceiptActivity"
+            android:label="@string/title_activity_receipt" />
+        <activity android:name=".activity.activites.SelectCustomerActivity" />
+        <activity
+            android:name=".activity.activites.SelectProductActivity"
+            android:theme="@style/AppThemeNoBar" />
+        <activity android:name=".activity.activites.LedgerActivity" />
+        <activity android:name=".activity.activites.LedgerProceedActivity" />
+        <activity
+            android:name=".activity.activites.TotalBillActivity"
+            android:theme="@style/AppThemeNoBar" />
+        <activity android:name=".activity.activites.ReportsActivity" />
+        <activity android:name=".activity.activites.SalesReportActivity" />
+        <activity android:name=".activity.activites.ReturnedOrderDetailActivity" />
+        <activity android:name=".activity.activites.EmptyBottlesReport" />
+
+        <service
+            android:name=".activity.Service.FirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="firebase_messaging_auto_init_enabled"
+                android:value="false" />
+            <meta-data
+                android:name="firebase_analytics_collection_enabled"
+                android:value="false" />
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

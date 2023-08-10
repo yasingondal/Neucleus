@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:text="Item Price"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/linear_firsttag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Piece"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etPiecePrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/packPriceLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pack"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:id="@+id/etPackPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="8dp"
+                    android:enabled="false"
+                    android:inputType="none"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cartonPriceLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Carton"
+
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etCtnPrice"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:inputType="none"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="Item Qty"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Piece"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/piecesQtyET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:inputType="number"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/packQtyLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/pakQtyET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:inputType="none"
+                    android:enabled="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cartonQtyLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Carton"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/ctnQtyET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:inputType="none"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <NumberPicker
+            android:id="@+id/number_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone">
+        </NumberPicker>
+        <LinearLayout
+            android:id="@+id/focLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/selectfocttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="Select Foc Type"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/RGSelectFoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3.5">
+                <RadioButton
+                    android:id="@+id/qtyRB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Qty"
+                    android:textSize="14sp" />
+                <RadioButton
+                    android:id="@+id/valueRB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Value"
+                    android:textSize="14sp" />
+                <RadioButton
+                    android:id="@+id/precentageRB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Percentage "
+                    android:textSize="14sp" />
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/foc_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_foc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Foc"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/focET"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+        <NumberPicker
+            android:id="@+id/foc_number_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>
